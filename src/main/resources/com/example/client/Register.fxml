@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.Register">
+
+    <Button fx:id="back" layoutX="64.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#backLogin" style="-fx-background-color: transparent;">
+        <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="-16.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@ProjectIcons/cancel.png" />
+            </ImageView>
+        </graphic>
+
+    </Button>
+    <Label layoutX="430.0" layoutY="145.0" text="Are You ?">
+        <font>
+            <Font name="Calibri" size="36.0" />
+        </font>
+    </Label>
+    <Button fx:id="doctorbtn" layoutX="330.0" layoutY="234.0" maxWidth="109.0" mnemonicParsing="false" onAction="#getDoc" prefHeight="41.0" prefWidth="109.0" style="-fx-background-color: #4ab3fc; -fx-max-width: 100;" text="Doctor" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="19.0" />
+        </font>
+    </Button>
+    <Button fx:id="patientbtn" layoutX="570.0" layoutY="234.0" maxWidth="109.0" mnemonicParsing="false" onAction="#getPat" prefHeight="41.0" prefWidth="109.0" style="-fx-background-color: #ffc638;" text="Patient" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="19.0" />
+        </font>
+    </Button>
+</Pane>

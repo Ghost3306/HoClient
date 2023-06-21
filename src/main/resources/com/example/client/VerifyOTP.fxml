@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.Login">
+
+    <ImageView fx:id="backB" fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="39.0" onMouseClicked="#backLoginB" pickOnBounds="true" preserveRatio="true">
+        <Image url="@ProjectIcons/avatar.png" />
+    </ImageView>
+
+    <Button fx:id="backD" layoutX="64.0" layoutY="61.0" mnemonicParsing="false" style="-fx-background-color: transparent;" onAction="#backD">
+        <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0"  onMouseClicked="#backD" layoutX="-16.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@ProjectIcons/cancel.png" />
+            </ImageView>
+        </graphic>
+
+    </Button>
+
+    <Label layoutX="250.0" layoutY="252.0" text="Enter OTP : " textFill="#4ab3fc">
+        <font>
+            <Font name="Calibri Bold" size="21.0" />
+        </font>
+    </Label>
+    <TextField fx:id="otp" layoutX="367.0" layoutY="248.0" prefHeight="25.0" prefWidth="217.0" promptText="1576">
+        <font>
+            <Font name="Calibri Bold" size="20.0" />
+        </font>
+    </TextField>
+    <Button fx:id="verify" layoutX="616.0" layoutY="248.0" mnemonicParsing="false" onAction="#verifyOTP" style="-fx-background-radius: 10px; -fx-background-color: #4ab3fc;" text="Verify" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="18.0" />
+        </font>
+    </Button>
+    <Label layoutX="404.0" layoutY="202.0" text="OTP Verification" textFill="#ffaf22">
+        <font>
+            <Font name="Calibri Bold" size="22.0" />
+        </font>
+    </Label>
+    <Label fx:id="llabel" layoutX="404.0" layoutY="362.0" text="Label" visible="false" />
+</Pane>

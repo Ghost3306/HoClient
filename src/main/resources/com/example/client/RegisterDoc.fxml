@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.Register">
+    <Button fx:id="backtoLog" layoutX="64.0" layoutY="61.0" mnemonicParsing="false" onAction="#backLoginA" style="-fx-background-color: transparent;" />
+    <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="26.0" layoutY="22.0" onMouseClicked="#backLoginA" pickOnBounds="true" preserveRatio="true">
+        <Image url="@ProjectIcons/cancel.png" />
+    </ImageView>
+    <Label layoutX="67.0" layoutY="77.0" text="First Name :" textFill="#4ab3fc">
+      <font>
+         <Font name="Calibri Bold" size="16.0" />
+      </font></Label>
+    <Label layoutX="662.0" layoutY="77.0" text="Last Name :" textFill="#4ab3fc">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <TextField fx:id="dfname" layoutX="161.0" layoutY="74.0" prefHeight="25.0" prefWidth="156.0" >
+        <font>
+            <Font name="Calibri" size="12.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="dmname" layoutX="483.0" layoutY="74.0" >
+        <font>
+            <Font name="Calibri" size="12.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="dlname" layoutX="758.0" layoutY="74.0">
+        <font>
+            <Font name="Calibri" size="12.0" />
+        </font>
+    </TextField>
+    <Label layoutX="365.0" layoutY="77.0" text="Middle Name : " textFill="#4ab3fc">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+
+    <Label layoutX="67.0" layoutY="131.0" text="Date of Birth : ">
+      <font>
+         <Font name="Calibri Bold" size="16.0" />
+      </font></Label>
+    <Label layoutX="104.0" layoutY="179.0" text="Email : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="365.0" layoutY="179.0" text="Phone : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="82.0" layoutY="231.0" text="Address : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <DatePicker fx:id="ddob" layoutX="180.0" layoutY="127.0" prefHeight="25.0" prefWidth="141.0" />
+    <Label layoutX="344.0" layoutY="141.0" text="Age will be calculated from the date of birth.">
+        <font>
+            <Font name="Calibri Bold" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="demail" layoutX="165.0" layoutY="175.0" >
+        <font>
+            <Font name="Calibri" size="12.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="dphone" layoutX="433.0" layoutY="175.0">
+        <font>
+            <Font name="Calibri" size="12.0" />
+        </font>
+    </TextField>
+    <TextArea fx:id="daddress" layoutX="166.0" layoutY="231.0" prefHeight="97.0" prefWidth="214.0" >
+        <font>
+            <Font name="Calibri" size="12.0" />
+        </font>
+    </TextArea>
+
+    <PasswordField fx:id="dcreatepass" layoutX="199.0" layoutY="343.0" >
+        <font>
+            <Font name="Calibri" size="12.0" />
+        </font>
+    </PasswordField>
+    <PasswordField fx:id="dconfirmpass" layoutX="515.0" layoutY="343.0">
+        <font>
+            <Font name="Calibri" size="12.0" />
+        </font>
+    </PasswordField>
+    <Label layoutX="68.0" layoutY="347.0" text="Create Password :">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="367.0" layoutY="346.0" text="Confirm Password : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="557.0" layoutY="382.0" text="Password should contain 8 character">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="557.0" layoutY="407.0" text="Password must contain atleast on">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="582.0" layoutY="431.0" text="- Uppercase, Number an-d Special Character. ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Button fx:id="registerbtn" layoutX="104.0" layoutY="485.0" mnemonicParsing="false" onAction="#RegisterDoc" prefHeight="29.0" prefWidth="97.0" style="-fx-background-color: #4ab3fc;" text="REGISTER" textFill="WHITE">
+      <font>
+         <Font name="Calibri Bold" size="14.0" />
+      </font></Button>
+   <Label layoutX="79.0" layoutY="23.0" text="Doctor Registration">
+      <font>
+         <Font name="Calibri Bold" size="24.0" />
+      </font>
+   </Label>
+
+
+</Pane>

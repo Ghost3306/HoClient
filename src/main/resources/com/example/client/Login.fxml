@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.Login">
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="416.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@ProjectIcons/avatar.png" />
+    </ImageView>
+    <Label layoutX="237.0" layoutY="184.0" text="User ID : " textFill="#4ab3fc">
+        <font>
+            <Font name="Calibri Bold" size="26.0" />
+        </font>
+    </Label>
+    <TextField fx:id="user" layoutX="353.0" layoutY="182.0" prefHeight="25.0" prefWidth="276.0" promptText="lalit@gmail.com">
+        <font>
+            <Font name="Candara Light" size="18.0" />
+        </font>
+    </TextField>
+
+    <Label layoutX="222.0" layoutY="261.0" text="Password : " textFill="#4ab3fc">
+        <font>
+            <Font name="Calibri Bold" size="25.0" />
+        </font>
+    </Label>
+    <PasswordField fx:id="password" layoutX="353.0" layoutY="259.0" prefHeight="25.0" prefWidth="276.0" promptText="*******">
+        <font>
+            <Font name="Candara Light" size="18.0" />
+        </font>
+    </PasswordField>
+    <RadioButton fx:id="doctor" layoutX="416.0" layoutY="328.0" mnemonicParsing="false" onAction="#getRadio" text="Doctor" textFill="#4ab3fc">
+        <font>
+            <Font name="Calibri Light" size="14.0" />
+        </font>
+        <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="patient" layoutX="507.0" layoutY="328.0" mnemonicParsing="false" onAction="#getRadio" text="Patient" textFill="#4ab3fc" toggleGroup="$tg">
+        <font>
+            <Font name="Calibri Light" size="14.0" />
+        </font>
+    </RadioButton>
+    <Button fx:id="login" layoutX="548.0" layoutY="376.0" mnemonicParsing="false" onAction="#login" prefWidth="90" style="-fx-background-color: #4ab3fc; -fx-background-radius: 10px;" text="Login" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold Italic" size="21.0" />
+        </font>
+    </Button>
+    <Button fx:id="cancel" layoutX="308.0" layoutY="376.0" mnemonicParsing="false" onAction="#cancel" prefWidth="90" style="-fx-background-color: #ffc638; -fx-background-radius: 10px;" text="Cancel" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold Italic" size="21.0" />
+        </font>
+    </Button>
+    <Label layoutX="420.0" layoutY="442.0" text="New User?">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="register" layoutX="513.0" layoutY="445.0" onMouseClicked="#gotoRegister" text="Register" textFill="#4ab3fc">
+        <font>
+            <Font name="Calibri Italic" size="19.0" />
+        </font>
+    </Label>
+    <Label fx:id="forgot" layoutX="638.0" layoutY="279.0" onMouseClicked="#forgot" text="Forgot?" textFill="RED" underline="true">
+        <font>
+            <Font name="Calibri Italic" size="16.0" />
+        </font>
+    </Label>
+
+
+</Pane>

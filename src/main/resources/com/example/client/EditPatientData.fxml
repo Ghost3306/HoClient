@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.EditPatientData">
+    <Button fx:id="back" layoutX="64.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#back" style="-fx-background-color: transparent;" />
+
+    <Label layoutX="103.0" layoutY="35.0" text="First Name :">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="388.0" layoutY="35.0" text="Middle Name :">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="695.0" layoutY="34.0" text="Last Name :">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label fx:id="fname" layoutX="193.0" layoutY="35.0" text="11">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label fx:id="mname" layoutX="494.0" layoutY="35.0" text="11">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label fx:id="lname" layoutX="787.0" layoutY="35.0" text="11">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="80.0" layoutY="66.0" text="Date of Birth : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="104.0" layoutY="105.0" text="Email : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="384.0" layoutY="105.0" text="Phone : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="95.0" layoutY="151.0" text="Address : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label fx:id="dob" layoutX="183.0" layoutY="66.0" prefWidth="141.0" text="11">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label fx:id="age" layoutX="438.0" layoutY="66.0" text="11">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="393.0" layoutY="65.0" text="Age : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <TextField fx:id="email" layoutX="164.0" layoutY="99.0">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </TextField>
+    <Label fx:id="phone" layoutX="456.0" layoutY="105.0" text="11">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <TextArea fx:id="address" layoutX="170.0" layoutY="152.0" prefHeight="97.0" prefWidth="214.0">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </TextArea>
+
+    <TextField fx:id="height" layoutX="527.0" layoutY="145.0">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="weight" layoutX="527.0" layoutY="185.0">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="work" layoutX="527.0" layoutY="227.0">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </TextField>
+    <TextArea fx:id="health" layoutX="210.0" layoutY="283.0" prefHeight="81.0" prefWidth="159.0" text="no">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </TextArea>
+    <TextArea fx:id="physical" layoutX="540.0" layoutY="283.0" prefHeight="81.0" prefWidth="168.0" text="no">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </TextArea>
+
+
+
+    <Label layoutX="444.0" layoutY="151.0" text="Height : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="442.0" layoutY="192.0" text="Weight : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="420.0" layoutY="233.0" text="Occupation : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="103.0" layoutY="283.0" text="Health Issues : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="429.0" layoutY="283.0" text="Physical Issues : ">
+        <font>
+            <Font name="Calibri Bold" size="16.0" />
+        </font>
+    </Label>
+   <Button fx:id="submitData" layoutX="130.0" layoutY="411.0" mnemonicParsing="false" onAction="#submit" style="-fx-background-color: #4ab3fc;" text="Update" textFill="WHITE">
+       <font>
+           <Font name="Calibri Bold" size="18.0" />
+       </font>
+   </Button>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="22.0" layoutY="24.0"  onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+          <Image url="@ProjectIcons/cancel.png" />
+      </ImageView>
+
+
+</Pane>

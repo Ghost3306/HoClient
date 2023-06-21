@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.DoctorHome">
+
+    <ImageView fitHeight="64.0" fitWidth="58.0" layoutX="29.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@ProjectIcons/avatar.png" />
+    </ImageView>
+    <Button fx:id="back" layoutX="64.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#backLogin" style="-fx-background-color: transparent;" /><TableView fx:id="patientTab" layoutX="58.0" layoutY="360.0" prefHeight="200.0" prefWidth="497.0">
+      <columns>
+          <TableColumn fx:id="pname" prefWidth="210.9999885559082" text="Name" />
+          <TableColumn fx:id="page" prefWidth="56.20001220703125" text="Age" />
+          <TableColumn fx:id="pphone" prefWidth="132.79998779296875" text="Phone" />
+          <TableColumn fx:id="pmore" prefWidth="92.79998779296875" text="more" />
+
+      </columns>
+    </TableView>
+   <TableView fx:id="appointTab" layoutX="58.0" layoutY="130.0" prefHeight="179.0" prefWidth="371.0">
+     <columns>
+       <TableColumn fx:id="name" prefWidth="126.20001602172852" text="Name" />
+       <TableColumn fx:id="age" prefWidth="88.19996643066406" text="Phone" />
+         <TableColumn fx:id="phone" prefWidth="75.0" text="Date" />
+         <TableColumn fx:id="more" prefWidth="75.0" text="More" />
+
+     </columns>
+   </TableView>
+   <Label layoutX="58.0" layoutY="326.0" text="Patient List" />
+   <Label layoutX="58.0" layoutY="102.0" text="Your Appointments" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="938.0" layoutY="21.0" onMouseClicked="#backLogin" pickOnBounds="true" preserveRatio="true">
+          <Image url="@ProjectIcons/Logout.png" />
+      </ImageView>
+   <Label layoutX="87.0" layoutY="27.0" text="Dr.">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </Label>
+   <Label fx:id="dname" layoutX="116.0" layoutY="27.0" text="Label">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </Label>
+    <JFXDrawer fx:id="drawer" alignment="TOP_CENTER" defaultDrawerSize="200.0" direction="RIGHT" layoutX="800.0" layoutY="76.0" prefHeight="524.0" prefWidth="200.0">
+        
+    </JFXDrawer>
+</Pane>

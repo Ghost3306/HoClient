@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="600.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <ImageView fitHeight="146.0" fitWidth="142.0" layoutX="33.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@ProjectIcons/avatar.png" />
+    </ImageView>
+    <Button accessibleText="profile" layoutX="1.0" layoutY="190.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #4ab3fc;" text="My Profile">
+      <font>
+         <Font name="Calibri Bold" size="21.0" />
+      </font></Button>
+    <Button accessibleText="button2" layoutY="322.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #4ab3fc;" text="Payments">
+      <font>
+         <Font name="Calibri Bold" size="22.0" />
+      </font></Button>
+    <Button accessibleText="button3" layoutY="255.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #4ab3fc;" text="Contact to Patient">
+      <font>
+         <Font name="Calibri Bold" size="21.0" />
+      </font></Button>
+    <Button fx:id="submitData" accessibleText="logoout" layoutX="60.0" layoutY="425.0" mnemonicParsing="false" style="-fx-background-color: #4ab3fc;" text="LOGOUT" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="18.0" />
+        </font>
+    </Button>
+
+</Pane>
